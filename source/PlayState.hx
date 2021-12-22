@@ -352,6 +352,10 @@ class PlayState extends MusicBeatState
 					curStage = 'school';
 				case 'thorns':
 					curStage = 'schoolEvil';
+				case 'balls':
+					curStage = 'lmao';
+				case 'interstate-270-washington-national-pike':
+					curStage = 'lmao';
 				default:
 					curStage = 'stage';
 			}
@@ -560,6 +564,12 @@ class PlayState extends MusicBeatState
 
 				var evilSnow:BGSprite = new BGSprite('christmas/evilSnow', -200, 700);
 				add(evilSnow);
+
+			case 'lmao': //Week Noky - 
+				var bg:BGSprite = new BGSprite('bg', 0, 0, 0.2, 0.2);
+				bg.setGraphicSize(Std.int(bg.width * 0.8));
+				bg.updateHitbox();
+				add(bg);
 
 			case 'school': //Week 6 - Senpai, Roses
 				GameOverSubstate.deathSoundName = 'fnf_loss_sfx-pixel';

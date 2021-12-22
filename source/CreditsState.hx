@@ -80,8 +80,44 @@ class CreditsState extends MusicBeatState
 
 		var pisspoop:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
 			['vs noky'],
-			['Ragarnoky',		'shadowmario',		'star of the show',						'https://www.youtube.com/channel/UC3Y_eevUSaVNroiEPJubO0Q',	'00aa00'],
-			['brohmon',		'shadowmario',		'programmer, composer and owner',						'https://www.youtube.com/channel/UCbJWOoN78xpD5qWVSUIXGkQ',	'00ffff']
+			['Ragarnoky',		'thenoky',		'star of the show',						'https://www.youtube.com/channel/UC3Y_eevUSaVNroiEPJubO0Q',	'00aa00'],
+			['brohmon',		'broh',		'programmer, composer and owner',						'https://www.youtube.com/channel/UCbJWOoN78xpD5qWVSUIXGkQ',	'00ffff'],
+			['balls song'],
+			['Ragarnoky',		'thenoky',		'balls',						'https://www.youtube.com/channel/UC3Y_eevUSaVNroiEPJubO0Q',	'00aa00'],
+			['Indigo',		'thenoky',		'balls',						'https://www.youtube.com/channel/UCJPlfnqSCPHEVJDzgagtxXg',	'000099'],
+			['Vic',		'thenoky',		'vic vic vic vic vic vic vic vic vic vic vic',						'https://www.youtube.com/channel/UCol8veOHkFoxGda98Eow_dw',	'00ffff'],
+			['balls'],
+			['balls',		'balls',		'BALLS',						'',	'00aa00'],
+			['balls'],
+			['balls',		'balls',		'BALLS',						'',	'00aa00'],
+			['balls'],
+			['balls',		'balls',		'BALLS',						'',	'00aa00'],
+			['balls'],
+			['balls',		'balls',		'BALLS',						'',	'00aa00'],
+			['balls'],
+			['balls',		'balls',		'BALLS',						'',	'00aa00'],
+			['balls'],
+			['balls',		'balls',		'BALLS',						'',	'00aa00'],
+			['balls'],
+			['balls',		'balls',		'BALLS',						'',	'00aa00'],
+			['balls'],
+			['balls',		'balls',		'BALLS',						'',	'00aa00'],
+			['balls'],
+			['balls',		'balls',		'BALLS',						'',	'00aa00'],
+			['balls'],
+			['balls',		'balls',		'BALLS',						'',	'00aa00'],
+			['balls'],
+			['balls',		'balls',		'BALLS',						'',	'00aa00'],
+			['balls'],
+			['balls',		'balls',		'BALLS',						'',	'00aa00'],
+			['balls'],
+			['balls',		'balls',		'BALLS',						'',	'00aa00'],
+			['balls'],
+			['balls',		'balls',		'BALLS',						'',	'00aa00'],
+			['balls'],
+			['balls',		'balls',		'BALLS',						'',	'00aa00'],
+			['balls']
+			
 		];
 		
 		for(i in pisspoop){

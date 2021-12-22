@@ -24,11 +24,12 @@ class OutdatedState extends MusicBeatState
 		add(bg);
 
 		warnText = new FlxText(0, 0, FlxG.width,
-			"WARNING   \n
-			THIS MOD CONTAINS VERY LOUD SOUNDS AND MUSIC,\n
-			PLEASE TURN DOWN YOUR VOLUME\n
+			"WARNING!\n
+			this is a joke mod\n
+			do not take it seriously\n
 			\n
-			balls",
+			oh and also remember to subscribe to ragarnoky\n
+			press enter to continue",
 			32);
 		warnText.setFormat("VCR OSD Mono", 32, FlxColor.WHITE, CENTER);
 		warnText.screenCenter(Y);

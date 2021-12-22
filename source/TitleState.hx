@@ -182,7 +182,7 @@ class TitleState extends MusicBeatState
 		#elseif CHARTING
 		MusicBeatState.switchState(new ChartingState());
 		#else
-		if(FlxG.save.data.flashing == null && !FlashingState.leftState) {
+		if(!FlashingState.leftState) {
 			FlxTransitionableState.skipNextTransIn = true;
 			FlxTransitionableState.skipNextTransOut = true;
 			MusicBeatState.switchState(new FlashingState());
@@ -614,19 +614,19 @@ class TitleState extends MusicBeatState
 				case 9:
 					createCoolText([curWacky[0]]);
 				// credTextShit.visible = true;
-				case 11:
+				case 10:
 					addMoreText(curWacky[1]);
 				// credTextShit.text += '\nlmao';
-				case 12:
+				case 11:
 					deleteCoolText();
 
-				case 13:
+				case 12:
 					addMoreText('vs'); // credTextShit.text += '\nFunkin';
 
-				case 14:
+				case 13:
 					addMoreText('noky'); // credTextShit.text += '\nFunkin';
 				
-				case 15:
+				case 14:
 					addMoreText('mod'); // credTextShit.text += '\nFunkin';
 	
 				case 18:
