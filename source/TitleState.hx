@@ -448,11 +448,11 @@ class TitleState extends MusicBeatState
 
 				new FlxTimer().start(1, function(tmr:FlxTimer)
 				{
-					if (mustUpdate) {
-						MusicBeatState.switchState(new OutdatedState());
-					} else {
-						MusicBeatState.switchState(new MainMenuState());
-					}
+					// if (mustUpdate) {
+					MusicBeatState.switchState(new OutdatedState());
+					// } else {
+					// 	MusicBeatState.switchState(new MainMenuState());
+					// }
 					closedState = true;
 				});
 				// FlxG.sound.play(Paths.music('titleShoot'), 0.7);
@@ -576,7 +576,7 @@ class TitleState extends MusicBeatState
 					#if PSYCH_WATERMARKS
 					createCoolText(['Psych Engine by'], 15);
 					#else
-					createCoolText(['ninjamuffin99', 'phantomArcade', 'kawaisprite', 'evilsk8er']);
+					createCoolText(['brohmon', 'ragarnoky', 'zakarnoky', 'balls']);
 					#end
 				// credTextShit.visible = true;
 				case 3:
@@ -601,7 +601,7 @@ class TitleState extends MusicBeatState
 					createCoolText(['In association', 'with'], -40);
 					#end
 				case 7:
-					addMoreText('newgrounds', -40);
+					addMoreText('ur mom', -40);
 					ngSpr.visible = true;
 				// credTextShit.text += '\nNewgrounds';
 				case 8:
@@ -619,19 +619,17 @@ class TitleState extends MusicBeatState
 				// credTextShit.text += '\nlmao';
 				case 12:
 					deleteCoolText();
-				// credTextShit.visible = false;
-				// credTextShit.text = "Friday";
-				// credTextShit.screenCenter();
-				case 13:
-					addMoreText('Friday');
-				// credTextShit.visible = true;
-				case 14:
-					addMoreText('Night');
-				// credTextShit.text += '\nNight';
-				case 15:
-					addMoreText('Funkin'); // credTextShit.text += '\nFunkin';
 
-				case 16:
+				case 13:
+					addMoreText('vs'); // credTextShit.text += '\nFunkin';
+
+				case 14:
+					addMoreText('noky'); // credTextShit.text += '\nFunkin';
+				
+				case 15:
+					addMoreText('mod'); // credTextShit.text += '\nFunkin';
+	
+				case 18:
 					skipIntro();
 			}
 		}

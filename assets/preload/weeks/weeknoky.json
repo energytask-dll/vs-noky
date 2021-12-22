@@ -1,0 +1,22 @@
+{
+	"songs": [
+		["balls", "bf", [160, 209, 255]],
+		["interstate 270 washington national pike", "bf", [160, 209, 255]],
+		["balls", "bf", [160, 209, 255]]
+	],
+
+	"weekCharacters": [
+		"bf",
+		"bf",
+		"gf"
+	],
+	"weekBackground": "christmas",
+
+	"storyName": "THE NOKY (FT. RAGARNOKY)",
+	"weekBefore": "tutorial",
+	"weekName": "Week Noky",
+	"startUnlocked": true,
+
+	"hideStoryMode": false,
+	"hideFreeplay": false
+}
