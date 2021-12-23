@@ -352,9 +352,7 @@ class PlayState extends MusicBeatState
 					curStage = 'school';
 				case 'thorns':
 					curStage = 'schoolEvil';
-				case 'balls':
-					curStage = 'lmao';
-				case 'interstate-270-washington-national-pike':
+				case 'balls' | 'interstate-270-washington-national-pike' | 'among-us-impostor':
 					curStage = 'lmao';
 				default:
 					curStage = 'stage';
@@ -566,7 +564,7 @@ class PlayState extends MusicBeatState
 				add(evilSnow);
 
 			case 'lmao': //Week Noky - 
-				var bg:BGSprite = new BGSprite('bg', 0, 0, 0.2, 0.2);
+				var bg:BGSprite = new BGSprite('bg', 0, -100, 0.2, 0.2);
 				bg.setGraphicSize(Std.int(bg.width * 0.8));
 				bg.updateHitbox();
 				add(bg);
