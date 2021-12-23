@@ -1126,6 +1126,15 @@ class PlayState extends MusicBeatState
 					if(daSong == 'roses') FlxG.sound.play(Paths.sound('ANGRY'));
 					schoolIntro(doof);
 
+				case 'interstate-270-washington-national-pike':
+					startDialogue(dialogueJson);
+
+				case 'among-us-impostor':
+					startDialogue(dialogueJson);
+				
+				case 'balls':
+					startDialogue(dialogueJson);
+
 				default:
 					startCountdown();
 			}

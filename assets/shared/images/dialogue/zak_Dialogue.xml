@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="zak_dialogue.png">
+	<!-- Created with editing an existing xml file -->
+	<SubTexture name="ZAK0000" x="0" y="0" width="128" height="128" pivotX="0" pivotY="0"/>
+	<SubTexture name="ZAK DOINURMOM0000" x="0" y="0" width="128" height="128" pivotX="0" pivotY="0"/>
+	<SubTexture name="ZAK DOINURMOM LOOP0000" x="0" y="0" width="128" height="128" pivotX="0" pivotY="0"/>
+</TextureAtlas>

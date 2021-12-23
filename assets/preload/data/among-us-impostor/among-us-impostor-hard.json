@@ -150,10 +150,10 @@
 		],
 		"splashSkin": "noteSplashes",
 		"validScore": false,
-		"gfVersion": "gf",
+		"gfVersion": "",
 		"bpm": 150,
 		"arrowSkin": "",
 		"needsVoices": true,
-		"song": "interstate-270-washington-national-pike"
+		"song": "among-us-impostor"
 	}
 }

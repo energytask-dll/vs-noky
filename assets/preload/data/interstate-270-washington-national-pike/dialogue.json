@@ -1,0 +1,25 @@
+{
+	"dialogue": [
+		{
+			"expression": "talk",
+			"text": "ghekl09oe it is me zakarnoky",
+			"boxState": "normal",
+			"speed": 0.02,
+			"portrait": "zak"
+		},
+		{
+			"expression": "talk",
+			"text": "i have come to rap battlwe oeuhoiutwesdkflj\\ndfgk;lsjdg;lkjdsfk;lgjdklfgjdklfgjsdlkf;gjksdfljgl\\ndsfjg;ldnsfg;lksdfj;glksdjf;lkgjsdf;lgjsfdk;lgjkdlf",
+			"boxState": "normal",
+			"speed": 0.02,
+			"portrait": "zak"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "ok"
+		}
+	]
+}

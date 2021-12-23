@@ -1,0 +1,67 @@
+{
+	"dialogue": [
+		{
+			"expression": "talk",
+			"text": "omkgokj i am so anrgy no cap for real for real",
+			"boxState": "angry",
+			"speed": 0.02,
+			"portrait": "zak"
+		},
+		{
+			"expression": "talk",
+			"text": "your gril friend no longeqr  exsest",
+			"boxState": "angry",
+			"speed": 0.02,
+			"portrait": "zak"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "WAAAAAAAAAAAAAA SO Sad Epic Gamenr\\nMOmenjt"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "can we get 1 liek 0on trhis vido"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "*phasdes form erxistance*"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "o no my gf gone!!!111!!!!!11!111!!!!!!11111111111111"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "zak you suck :middle_finger:\\n:middle_finger: :middle_finger: :middle_finger:"
+		},
+		{
+			"speed": 0.025,
+			"portrait": "zak",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "there is nothignkt youi ycanhs do about this\\nsitation"
+		},
+		{
+			"speed": 0.025,
+			"portrait": "zak",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "i wail now do your mother\\noooooOOOoOoOOOOooOoOOOOOOoOoOOoOOOoOOoOoOo"
+		}
+	]
+}
