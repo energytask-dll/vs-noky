@@ -6,7 +6,7 @@
 				0
 			],
 			"indices": [],
-			"fps": 24,
+			"fps": 30,
 			"anim": "idle",
 			"loop": true,
 			"name": "idle"
@@ -62,8 +62,8 @@
 		-40,
 		170
 	],
-	"healthicon": "face",
-	"flip_x": true,
+	"healthicon": "thenoky",
+	"flip_x": false,
 	"healthbar_colors": [
 		0,
 		161,
