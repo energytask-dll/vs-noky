@@ -1,0 +1,39 @@
+{
+	"dialogue": [
+		{
+			"expression": "talk",
+			"text": "boi what the hell boi",
+			"boxState": "normal",
+			"speed": 0.02,
+			"portrait": "zak"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "idk man i just im just too #swag for you "
+		},
+    {
+			"expression": "talk",
+			"text": "cap no one does this to the noky",
+			"boxState": "normal",
+			"speed": 0.02,
+			"portrait": "zak"
+		},
+    {
+			"expression": "talk",
+			"text": "no cap for real for rela i will distroey u thius time ",
+			"boxState": "normal",
+			"speed": 0.02,
+			"portrait": "zak"
+		},
+    {
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "ok bistie "
+		}
+	]
+}
