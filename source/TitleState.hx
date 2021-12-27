@@ -576,7 +576,7 @@ class TitleState extends MusicBeatState
 					#if PSYCH_WATERMARKS
 					createCoolText(['Psych Engine by'], 15);
 					#else
-					createCoolText(['brohmon', 'ragarnoky', 'zakarnoky', 'balls']);
+					createCoolText(['your mom incorporated', 'yuiuo', 'ragarnoky', 'tech']);
 					#end
 				// credTextShit.visible = true;
 				case 3:
@@ -627,9 +627,9 @@ class TitleState extends MusicBeatState
 					addMoreText('noky'); // credTextShit.text += '\nFunkin';
 				
 				case 14:
-					addMoreText('mod'); // credTextShit.text += '\nFunkin';
-	
-				case 18:
+					addMoreText('balls'); // credTextShit.text += '\nFunkin';
+				
+				case 15:
 					skipIntro();
 			}
 		}

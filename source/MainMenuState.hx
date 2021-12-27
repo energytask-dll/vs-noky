@@ -25,6 +25,10 @@ using StringTools;
 
 class MainMenuState extends MusicBeatState
 {
+	public static var buildnumber:Int = 8;
+	public static var pre:Bool = true;
+	public static var prenumber:Int = 3;
+
 	public static var psychEngineVersion:String = '0.5.1'; //This is also used for Discord RPC
 	public static var curSelected:Int = 0;
 
@@ -121,7 +125,26 @@ class MainMenuState extends MusicBeatState
 		}
 
 		FlxG.camera.follow(camFollowPos, null, 1);
-
+		#if ALPHA_BUILD
+		var amongus:FlxText = new FlxText(12, 12, 0, "alpha build", 48);
+		var among:FlxText = new FlxText(12, 60, 0, "alpha " + buildnumber + ((pre) ? "-pre" + prenumber : ""), 24);
+		amongus.scrollFactor.set();
+		among.scrollFactor.set();
+		amongus.setFormat("VCR OSD Mono", 48, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		among.setFormat("VCR OSD Mono", 24, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		add(amongus);
+		add(among);
+		#end
+		#if BETA_BUILD
+		var amongus:FlxText = new FlxText(12, 12, 0, "beta build", 48);
+		var among:FlxText = new FlxText(12, 60, 0, "beta " + buildnumber + ((pre) ? "-pre" + prenumber : ""), 24);
+		amongus.scrollFactor.set();
+		among.scrollFactor.set();
+		amongus.setFormat("VCR OSD Mono", 48, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		among.setFormat("VCR OSD Mono", 24, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		add(amongus);
+		add(among);
+		#end
 		var versionShit:FlxText = new FlxText(12, FlxG.height - 44, 0, "Balls Engine v" + psychEngineVersion, 12);
 		versionShit.scrollFactor.set();
 		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
@@ -135,30 +158,8 @@ class MainMenuState extends MusicBeatState
 
 		changeItem();
 
-		#if ACHIEVEMENTS_ALLOWED
-		Achievements.loadAchievements();
-		var leDate = Date.now();
-		if (leDate.getDay() == 5 && leDate.getHours() >= 18) {
-			var achieveID:Int = Achievements.getAchievementIndex('friday_night_play');
-			if(!Achievements.isAchievementUnlocked(Achievements.achievementsStuff[achieveID][2])) { //It's a friday night. WEEEEEEEEEEEEEEEEEE
-				Achievements.achievementsMap.set(Achievements.achievementsStuff[achieveID][2], true);
-				giveAchievement();
-				ClientPrefs.saveSettings();
-			}
-		}
-		#end
-
 		super.create();
 	}
-
-	#if ACHIEVEMENTS_ALLOWED
-	// Unlocks "Freaky on a Friday Night" achievement
-	function giveAchievement() {
-		add(new AchievementObject('friday_night_play', camAchievement));
-		FlxG.sound.play(Paths.sound('confirmMenu'), 0.7);
-		trace('Giving achievement "friday_night_play"');
-	}
-	#end
 
 	var selectedSomethin:Bool = false;
 

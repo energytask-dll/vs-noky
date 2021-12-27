@@ -52,6 +52,10 @@
 	<define name="ACHIEVEMENTS_ALLOWED" />
 	<define name="VIDEOS_ALLOWED" if="web || windows" unless="32bits"/>
 
+	<!-- DISABLE ALL FLAGS BELOW WHEN THE MOD RELEASES -->
+	<define name="ALPHA_BUILD"/>
+	<!-- <define name="BETA_BUILD"/> -->
+
 	<!-- DONT ENABLE THIS -->
 	<define name="CHECK_FOR_UPDATES" if="desktop officialBuild"/>
 
@@ -115,7 +119,7 @@
 	<!-- <haxelib name="HtmlParser" /> -->
 
 	<!--In case you want to use nape with flixel-->
-	<!--<haxelib name="nape-haxe4" />-->
+	<haxelib name="nape-haxe4" />
 
 	<!-- ______________________________ Haxedefines _____________________________ -->
 
