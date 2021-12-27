@@ -80,13 +80,13 @@ class CreditsState extends MusicBeatState
 
 		var pisspoop:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
 			['vs noky'],
-			['Ragarnoky',		'thenoky',		'THE NOKY - composer and maker of 10% of the dialogue',						'https://www.youtube.com/channel/UC3Y_eevUSaVNroiEPJubO0Q',	'00aa00'],
+			['Ragarnoky',		'thenoky',		'THE NOKY - sexy beast',						'https://www.youtube.com/channel/UC3Y_eevUSaVNroiEPJubO0Q',	'00aa00'],
 			['brohmon',		'broh',		'artist, programmer, charter',						'https://www.youtube.com/channel/UCbJWOoN78xpD5qWVSUIXGkQ',	'00ffff'],
-			['yuiuo',		'yuiuo',		'made zak\'s icons',						'https://www.youtube.com/channel/UC1zndvuymlj0msFJ8oXoqnQ',	'00ffff'],
+			['yuiuo',		'yuiuo',		'2021 KitKat Bar winner',						'https://www.youtube.com/channel/UC1zndvuymlj0msFJ8oXoqnQ',	'00ffff'],
 			['balls song'],
 			['Ragarnoky',		'thenoky',		'balls',						'https://www.youtube.com/channel/UC3Y_eevUSaVNroiEPJubO0Q',	'00aa00'],
-			['Indigo',		'thenoky',		'they\'re inside your walls',						'https://www.youtube.com/channel/UCJPlfnqSCPHEVJDzgagtxXg',	'000099'],
-			['Vic',		'thenoky',		'vic vic vic vic vic vic vic vic vic vic vic',						'https://www.youtube.com/channel/UCol8veOHkFoxGda98Eow_dw',	'00ffff'],
+			['Indigo',		'thenoky',		'owner of moths and is inside my walls fuckinmg helpme',						'https://www.youtube.com/channel/UCJPlfnqSCPHEVJDzgagtxXg',	'000099'],
+			['Vic',		'thenoky',		'the mongus.',						'https://www.youtube.com/channel/UCol8veOHkFoxGda98Eow_dw',	'00ffff'],
 			['balls'],
 			['balls',		'balls',		'BALLS',						'https://www.youtube.com/watch?v=btuymnVDU28',	'00aa00'],
 			['balls'],
