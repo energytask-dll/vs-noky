@@ -85,8 +85,6 @@ class CreditsState extends MusicBeatState
 			['yuiuo',		'yuiuo',		'2021 KitKat Bar winner',						'https://www.youtube.com/channel/UC1zndvuymlj0msFJ8oXoqnQ',	'00ffff'],
 			['balls song'],
 			['Ragarnoky',		'thenoky',		'balls',						'https://www.youtube.com/channel/UC3Y_eevUSaVNroiEPJubO0Q',	'00aa00'],
-			['Indigo',		'thenoky',		'owner of moths and is inside my walls fuckinmg helpme',						'https://www.youtube.com/channel/UCJPlfnqSCPHEVJDzgagtxXg',	'000099'],
-			['Vic',		'thenoky',		'the mongus.',						'https://www.youtube.com/channel/UCol8veOHkFoxGda98Eow_dw',	'00ffff'],
 			['balls'],
 			['balls',		'balls',		'BALLS',						'https://www.youtube.com/watch?v=btuymnVDU28',	'00aa00'],
 			['balls'],
