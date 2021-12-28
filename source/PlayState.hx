@@ -2852,7 +2852,7 @@ class PlayState extends MusicBeatState
 				for (i in 0...targetsArray.length) {
 					var split:Array<String> = valuesArray[i].split(',');
 					var duration:Float = 0;
-					var intensity:Float = 0;
+					var intensity:Float = 0;var val1:Float = Std.parseFloat(value1);
 					if(split[0] != null) duration = Std.parseFloat(split[0].trim());
 					if(split[1] != null) intensity = Std.parseFloat(split[1].trim());
 					if(Math.isNaN(duration)) duration = 0;
@@ -2863,6 +2863,16 @@ class PlayState extends MusicBeatState
 					}
 				}
 
+			case 'flashbang':
+				var val1:Float = Std.parseFloat(value1);
+				var fb:FlxSprite = new FlxSprite().makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.WHITE);
+				add(fb);
+
+				FlxTween.tween(fb, {alpha: 0}, val1, {
+					onComplete: function (twn:FlxTween) {
+						remove(fb);
+					}
+				});
 
 			case 'Change Character':
 				var charType:Int = 0;

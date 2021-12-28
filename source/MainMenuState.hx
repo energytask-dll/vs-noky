@@ -155,7 +155,6 @@ class MainMenuState extends MusicBeatState
 		add(versionShit);
 
 		// NG.core.calls.event.logEvent('swag').send();
-
 		changeItem();
 
 		super.create();
