@@ -30,6 +30,7 @@ class OutdatedState extends MusicBeatState
 			\n
 			oh and also remember to subscribe to ragarnoky\n
 			(or your location and all personal information that relates to you or any of your friends, family, or relatives will be sent to the Department of Balls and I will do youre mom. Trust me.)\n
+			(no matter which difficulty you choose it will be the same thing)
 			press enter to continue",
 			32);
 		warnText.setFormat("VCR OSD Mono", 32, FlxColor.WHITE, CENTER);
