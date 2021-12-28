@@ -25,9 +25,9 @@ using StringTools;
 
 class MainMenuState extends MusicBeatState
 {
-	public static var buildnumber:Int = 8;
+	public static var buildnumber:Int = 9;
 	public static var pre:Bool = true;
-	public static var prenumber:Int = 3;
+	public static var prenumber:Int = 1;
 
 	public static var psychEngineVersion:String = '0.5.1'; //This is also used for Discord RPC
 	public static var curSelected:Int = 0;
