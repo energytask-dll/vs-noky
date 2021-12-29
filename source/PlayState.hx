@@ -1,5 +1,6 @@
 package;
 
+import secretshit.UnlockedState;
 #if desktop
 import Discord.DiscordClient;
 #end
@@ -2220,6 +2221,7 @@ class PlayState extends MusicBeatState
 				#end
 			}
 		}
+
 
 		if (FlxG.keys.anyJustPressed(debugKeysChart) && !endingSong && !inCutscene)
 		{

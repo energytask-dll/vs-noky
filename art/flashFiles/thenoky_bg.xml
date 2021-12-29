@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="thenoky_bg.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="ayo0000" x="0" y="0" width="286" height="446" frameX="-622" frameY="0" frameWidth="1384" frameHeight="448"/>
+	<SubTexture name="ayo0001" x="286" y="0" width="378" height="418" frameX="-570" frameY="-29" frameWidth="1384" frameHeight="448"/>
+	<SubTexture name="ayo0002" x="664" y="0" width="469" height="389" frameX="-518" frameY="-58" frameWidth="1384" frameHeight="448"/>
+	<SubTexture name="ayo0003" x="1133" y="0" width="561" height="361" frameX="-466" frameY="-86" frameWidth="1384" frameHeight="448"/>
+	<SubTexture name="ayo0004" x="1694" y="0" width="652" height="332" frameX="-414" frameY="-115" frameWidth="1384" frameHeight="448"/>
+	<SubTexture name="ayo0005" x="2346" y="0" width="743" height="303" frameX="-363" frameY="-144" frameWidth="1384" frameHeight="448"/>
+	<SubTexture name="ayo0006" x="3089" y="0" width="834" height="274" frameX="-311" frameY="-173" frameWidth="1384" frameHeight="448"/>
+	<SubTexture name="ayo0007" x="0" y="446" width="926" height="245" frameX="-259" frameY="-202" frameWidth="1384" frameHeight="448"/>
+	<SubTexture name="ayo0008" x="926" y="446" width="1018" height="217" frameX="-207" frameY="-231" frameWidth="1384" frameHeight="448"/>
+	<SubTexture name="ayo0009" x="1944" y="446" width="1109" height="189" frameX="-155" frameY="-259" frameWidth="1384" frameHeight="448"/>
+	<SubTexture name="ayo0010" x="0" y="691" width="1201" height="161" frameX="-103" frameY="-287" frameWidth="1384" frameHeight="448"/>
+	<SubTexture name="ayo0011" x="1201" y="691" width="1292" height="132" frameX="-51" frameY="-316" frameWidth="1384" frameHeight="448"/>
+	<SubTexture name="ayo0012" x="2493" y="691" width="1384" height="103" frameX="0" frameY="-345" frameWidth="1384" frameHeight="448"/>
+	<SubTexture name="ayo0013" x="2493" y="691" width="1384" height="103" frameX="0" frameY="-345" frameWidth="1384" frameHeight="448"/>
+	<SubTexture name="idle0000" x="0" y="0" width="286" height="446" frameX="-168" frameY="0" frameWidth="1384" frameHeight="448"/>
+	<SubTexture name="idle0001" x="0" y="852" width="434" height="349" frameX="-84" frameY="-98" frameWidth="583" frameHeight="447"/>
+	<SubTexture name="idle0002" x="434" y="852" width="583" height="250" frameX="0" frameY="-197" frameWidth="583" frameHeight="447"/>
+	<SubTexture name="idle0003" x="1017" y="852" width="533" height="283" frameX="-28" frameY="-164" frameWidth="583" frameHeight="447"/>
+	<SubTexture name="idle0004" x="1550" y="852" width="484" height="316" frameX="-56" frameY="-131" frameWidth="583" frameHeight="447"/>
+	<SubTexture name="idle0005" x="2034" y="852" width="435" height="348" frameX="-84" frameY="-99" frameWidth="583" frameHeight="447"/>
+	<SubTexture name="idle0006" x="2469" y="852" width="385" height="381" frameX="-112" frameY="-66" frameWidth="583" frameHeight="447"/>
+	<SubTexture name="idle0007" x="2854" y="852" width="336" height="414" frameX="-140" frameY="-33" frameWidth="583" frameHeight="447"/>
+	<SubTexture name="idle0008" x="0" y="0" width="286" height="446" frameX="-168" frameY="0" frameWidth="1384" frameHeight="448"/>
+</TextureAtlas>

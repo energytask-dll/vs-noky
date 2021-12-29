@@ -6,11 +6,11 @@
 	],
 
 	"weekCharacters": [
+		"thenoky",
 		"bf",
-		"bf",
-		"gf"
+		"thenoky"
 	],
-	"weekBackground": "christmas",
+	"weekBackground": "interstate",
 
 	"storyName": "THE NOKY (FT. RAGARNOKY)",
 	"weekBefore": "tutorial",

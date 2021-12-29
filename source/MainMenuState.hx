@@ -1,5 +1,6 @@
 package;
 
+import secretshit.UnlockedState;
 #if desktop
 import Discord.DiscordClient;
 #end
@@ -25,8 +26,8 @@ using StringTools;
 
 class MainMenuState extends MusicBeatState
 {
-	public static var buildnumber:Int = 9;
-	public static var pre:Bool = true;
+	public static var buildnumber:Int = 1;
+	public static var pre:Bool = false;
 	public static var prenumber:Int = 1;
 
 	public static var psychEngineVersion:String = '0.5.1'; //This is also used for Discord RPC
@@ -167,6 +168,11 @@ class MainMenuState extends MusicBeatState
 		if (FlxG.sound.music.volume < 0.8)
 		{
 			FlxG.sound.music.volume += 0.5 * FlxG.elapsed;
+		}
+
+		if (FlxG.keys.anyJustPressed([SIX]))
+		{
+			MusicBeatState.switchState(new UnlockedState());
 		}
 
 		var lerpVal:Float = CoolUtil.boundTo(elapsed * 7.5, 0, 1);
