@@ -1141,7 +1141,20 @@ class PlayState extends MusicBeatState
 			}
 			seenCutscene = true;
 		} else {
-			startCountdown();
+			switch (daSong) {
+				case 'interstate-270-washington-national-pike':
+					startDialogue(dialogueJson);
+
+				case 'among-us-impostor':
+					startDialogue(dialogueJson);
+				
+				case 'balls':
+					startDialogue(dialogueJson);
+
+				default:
+					startCountdown();
+			}
+			seenCutscene = true;
 		}
 		RecalculateRating();
 

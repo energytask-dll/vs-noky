@@ -20,13 +20,13 @@ class UnlockedState extends MusicBeatState {
         var bg:FlxSprite = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLUE);
         add(bg);
         var texts:Array<FlxText> = [
-            new FlxText(0, FlxG.height / 2 - 50, 0, "you unlocked the secret", 48),
-            new FlxText(0, FlxG.height / 2 + 50, 0, "press enter to continue", 48)
+            new FlxText(0, FlxG.height / 2 - 50, 0, "ayo", 48),
+            new FlxText(0, FlxG.height / 2 + 50, 0, "you found the noky's room", 48)
         ];
 
         // add text in bulk to reduce code repeating
         for (index => value in texts.keyValueIterator()) {
-            value.setFormat("VCR OSD Mono", 48, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+            value.setFormat(Paths.font("Pangolin-Regular.ttf"), 48, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
             value.screenCenter(FlxAxes.X);
             add(value);
         }

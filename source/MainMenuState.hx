@@ -26,7 +26,7 @@ using StringTools;
 
 class MainMenuState extends MusicBeatState
 {
-	public static var buildnumber:Int = 1;
+	public static var buildnumber:Int = 2;
 	public static var pre:Bool = false;
 	public static var prenumber:Int = 1;
 
@@ -131,8 +131,8 @@ class MainMenuState extends MusicBeatState
 		var among:FlxText = new FlxText(12, 60, 0, "alpha " + buildnumber + ((pre) ? "-pre" + prenumber : ""), 24);
 		amongus.scrollFactor.set();
 		among.scrollFactor.set();
-		amongus.setFormat("VCR OSD Mono", 48, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-		among.setFormat("VCR OSD Mono", 24, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		amongus.setFormat(Paths.font("Pangolin-Regular.ttf"), 48, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		among.setFormat(Paths.font("Pangolin-Regular.ttf"), 24, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(amongus);
 		add(among);
 		#end
@@ -141,18 +141,18 @@ class MainMenuState extends MusicBeatState
 		var among:FlxText = new FlxText(12, 60, 0, "beta " + buildnumber + ((pre) ? "-pre" + prenumber : ""), 24);
 		amongus.scrollFactor.set();
 		among.scrollFactor.set();
-		amongus.setFormat("VCR OSD Mono", 48, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-		among.setFormat("VCR OSD Mono", 24, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		amongus.setFormat(Paths.font("Pangolin-Regular.ttf"), 48, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		among.setFormat(Paths.font("Pangolin-Regular.ttf"), 24, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(amongus);
 		add(among);
 		#end
 		var versionShit:FlxText = new FlxText(12, FlxG.height - 44, 0, "Balls Engine v" + psychEngineVersion, 12);
 		versionShit.scrollFactor.set();
-		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		versionShit.setFormat(Paths.font("Pangolin-Regular.ttf"), 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);
 		var versionShit:FlxText = new FlxText(12, FlxG.height - 24, 0, "Friday Night Funkin' v" + Application.current.meta.get('version'), 12);
 		versionShit.scrollFactor.set();
-		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		versionShit.setFormat(Paths.font("Pangolin-Regular.ttf"), 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);
 
 		// NG.core.calls.event.logEvent('swag').send();

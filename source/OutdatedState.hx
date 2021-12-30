@@ -33,7 +33,7 @@ class OutdatedState extends MusicBeatState
 			(no matter which difficulty you choose it will be the same thing)
 			press enter to continue",
 			32);
-		warnText.setFormat("VCR OSD Mono", 32, FlxColor.WHITE, CENTER);
+		warnText.setFormat(Paths.font("Pangolin-Regular.ttf"), 32, FlxColor.WHITE, CENTER);
 		warnText.screenCenter(Y);
 		add(warnText);
 	}

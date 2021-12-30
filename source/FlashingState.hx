@@ -28,7 +28,7 @@ class FlashingState extends MusicBeatState
 			before pressing enter\n
 			your ears will thank you",
 			32);
-		warnText.setFormat("VCR OSD Mono", 32, FlxColor.WHITE, CENTER);
+		warnText.setFormat(Paths.font("Pangolin-Regular.ttf"), 32, FlxColor.WHITE, CENTER);
 		warnText.screenCenter(Y);
 		add(warnText);
 	}
