@@ -1,6 +1,5 @@
 package;
 
-import secretshit.UnlockedState;
 #if desktop
 import Discord.DiscordClient;
 #end
@@ -1128,7 +1127,7 @@ class PlayState extends MusicBeatState
 					schoolIntro(doof);
 
 				case 'interstate-270-washington-national-pike':
-					startDialogue(dialogueJson);
+					startVideo('introig');
 
 				case 'among-us-impostor':
 					startDialogue(dialogueJson);
@@ -1328,11 +1327,12 @@ class PlayState extends MusicBeatState
 
 			(new FlxVideo(fileName)).finishCallback = function() {
 				remove(bg);
-				if(endingSong) {
-					endSong();
-				} else {
-					startCountdown();
-				}
+				startDialogue(dialogueJson);
+				// if(endingSong) {
+				// 	endSong();
+				// } else {
+				// 	startCountdown();
+				// }
 			}
 			return;
 		} else {

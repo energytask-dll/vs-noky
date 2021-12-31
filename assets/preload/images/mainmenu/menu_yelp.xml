@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="menu_yelp.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="yelp basic0000" x="0" y="0" width="253" height="67"/>
+	<SubTexture name="yelp white0000" x="0" y="67" width="297" height="101"/>
+</TextureAtlas>

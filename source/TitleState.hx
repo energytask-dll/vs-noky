@@ -280,7 +280,7 @@ class TitleState extends MusicBeatState
 		#end
 		
 		logoBl.antialiasing = ClientPrefs.globalAntialiasing;
-		logoBl.animation.addByPrefix('bump', 'logo bumpin', 24, false);
+		logoBl.animation.addByPrefix('bump', 'logo bumpin', 30, false);
 		logoBl.animation.play('bump');
 		logoBl.updateHitbox();
 		// logoBl.screenCenter();
@@ -557,7 +557,7 @@ class TitleState extends MusicBeatState
 		super.beatHit();
 
 		if(logoBl != null) 
-			logoBl.animation.play('bump', true);
+			//// logoBl.animation.play('bump', true);
 
 		if(gfDance != null) {
 			danceLeft = !danceLeft;
@@ -621,15 +621,32 @@ class TitleState extends MusicBeatState
 					deleteCoolText();
 
 				case 12:
+					addMoreText('balls');
+				case 13:
+					addMoreText('balls');
+				case 14:
+					addMoreText('balls');
+				case 15:
+					addMoreText('balls');
+				case 16:
+					deleteCoolText();
+
+				case 17:
+					addMoreText('DONT PRESS 6 IN THE MAIN MENU'); // credTextShit.text += '\nFunkin';
+
+				case 21:
+					addMoreText('WORST MISTAKE OF MY LIFE'); // credTextShit.text += '\nFunkin';
+				case 24:
+					deleteCoolText();
+
+				
+				case 25:
 					addMoreText('vs'); // credTextShit.text += '\nFunkin';
 
-				case 13:
+				case 26:
 					addMoreText('noky'); // credTextShit.text += '\nFunkin';
 				
-				case 14:
-					addMoreText('balls'); // credTextShit.text += '\nFunkin';
-				
-				case 15:
+				case 27:
 					skipIntro();
 			}
 		}

@@ -1,6 +1,6 @@
 package;
 
-import secretshit.UnlockedState;
+import secretshit.SecretState;
 #if desktop
 import Discord.DiscordClient;
 #end
@@ -26,9 +26,10 @@ using StringTools;
 
 class MainMenuState extends MusicBeatState
 {
-	public static var buildnumber:Int = 2;
+	public static var buildnumber:Int = 1;
 	public static var pre:Bool = false;
 	public static var prenumber:Int = 1;
+	public static var isTestBuild:Bool = false;
 
 	public static var psychEngineVersion:String = '0.5.1'; //This is also used for Discord RPC
 	public static var curSelected:Int = 0;
@@ -41,6 +42,7 @@ class MainMenuState extends MusicBeatState
 		'story_mode',
 		'freeplay',
 		'credits',
+		'yelp',
 		'options'
 	];
 
@@ -135,16 +137,22 @@ class MainMenuState extends MusicBeatState
 		among.setFormat(Paths.font("Pangolin-Regular.ttf"), 24, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(amongus);
 		add(among);
-		#end
-		#if BETA_BUILD
-		var amongus:FlxText = new FlxText(12, 12, 0, "beta build", 48);
-		var among:FlxText = new FlxText(12, 60, 0, "beta " + buildnumber + ((pre) ? "-pre" + prenumber : ""), 24);
-		amongus.scrollFactor.set();
-		among.scrollFactor.set();
-		amongus.setFormat(Paths.font("Pangolin-Regular.ttf"), 48, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-		among.setFormat(Paths.font("Pangolin-Regular.ttf"), 24, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-		add(amongus);
-		add(among);
+		#else
+			#if BETA_BUILD
+				var amongus:FlxText = new FlxText(12, 12, 0, "beta build", 48);
+				var among:FlxText = new FlxText(12, 60, 0, "beta " + buildnumber + ((pre) ? "-pre" + prenumber : ""), 24);
+				amongus.scrollFactor.set();
+				among.scrollFactor.set();
+				amongus.setFormat(Paths.font("Pangolin-Regular.ttf"), 48, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+				among.setFormat(Paths.font("Pangolin-Regular.ttf"), 24, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+				add(amongus);
+				add(among);
+			#else
+				var amongus:FlxText = new FlxText(12, 12, 0, "release v" + buildnumber + ((pre) ? "-pre" + prenumber : "") + ((isTestBuild) ? " (TEST BUILD)" : ""), 48);
+				amongus.scrollFactor.set();
+				amongus.setFormat(Paths.font("Pangolin-Regular.ttf"), 48, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+				add(amongus);
+			#end
 		#end
 		var versionShit:FlxText = new FlxText(12, FlxG.height - 44, 0, "Balls Engine v" + psychEngineVersion, 12);
 		versionShit.scrollFactor.set();
@@ -172,7 +180,7 @@ class MainMenuState extends MusicBeatState
 
 		if (FlxG.keys.anyJustPressed([SIX]))
 		{
-			MusicBeatState.switchState(new UnlockedState());
+			MusicBeatState.switchState(new SecretState());
 		}
 
 		var lerpVal:Float = CoolUtil.boundTo(elapsed * 7.5, 0, 1);
@@ -242,6 +250,8 @@ class MainMenuState extends MusicBeatState
 									#end
 									case 'awards':
 										MusicBeatState.switchState(new AchievementsMenuState());
+									case 'yelp':
+										MusicBeatState.switchState(new YelpState());
 									case 'credits':
 										MusicBeatState.switchState(new CreditsState());
 									case 'options':

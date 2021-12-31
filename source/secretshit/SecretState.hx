@@ -31,6 +31,7 @@ class SecretState extends MusicBeatState {
             value.screenCenter(FlxAxes.X);
             add(value);
         }
+        super.create();
     }
 
     override function update(elapsed:Float)

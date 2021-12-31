@@ -56,7 +56,7 @@
 		! COMMENT OUT ALPHA_BUILD AND BETA_BUILD WHEN THE MOD RELEASES - brohmon 
 	-->
 	<!-- <define name="ALPHA_BUILD"/> -->
-	<define name="BETA_BUILD"/>
+	<!-- <define name="BETA_BUILD"/> -->
 
 	<!-- DONT ENABLE THIS -->
 	<define name="CHECK_FOR_UPDATES" if="desktop officialBuild"/>
